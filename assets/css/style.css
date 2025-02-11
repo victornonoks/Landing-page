@@ -7,13 +7,12 @@ body, html {
 nav {
     top: 0;
     position: fixed;
-    background-color: #000000; 
+    background-color: rgba(0, 0, 0, 0.20); 
     padding: 10px 0px 10px 0px;
     width: 100vw; 
     max-width: 100%; 
     left: 0;
     overflow: hidden; 
-    opacity: 25%;
 }
 
 nav ul {
@@ -37,7 +36,19 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Amarelo ao passar o mouse */
+    color: #005A8D; 
+}
+
+.logo {
+    height: 10px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: -35px;
+    left: 10rem;
 }
 
 .tela-principal {
@@ -68,7 +79,7 @@ nav ul li a:hover {
     font-family: "montserrat", serif;
 }
 
-.texto-principal button {
+.botao {
     background-color: #005A8D;
     border-radius: 50px;
     border: none;
@@ -77,4 +88,83 @@ nav ul li a:hover {
     padding: 10px;
     color: white;
     font-size: 32px;
+}
+
+.botao:hover {
+    background-color: #004e7b;
+}
+
+.img-compromentimento{
+    flex-shrink: 0; /* Impede que a imagem diminua muito */
+    width: 740px; /* Tamanho fixo da imagem */
+    height: 765px;
+    background-image: url("../imgs/Imagem-fabrica.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.compromentimento {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    max-width: 1550px;
+    margin: 50px 0 50px 10rem;
+    gap: 10rem ; 
+}
+
+.conteudo {
+    flex: 1;
+    max-width: 1200px;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    font-weight: normal;
+    font-family: "montserrat";
+    margin-bottom: 1px;
+}
+
+.conteudo h2 + p {
+    margin-top: 5px;
+}
+
+.conteudo h2 span {
+    color: #005A8D;
+}
+
+.conteudo p {
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: 200
+}
+
+.beneficio h3 {
+    font-family: "montserrat";
+    font-size: 24px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.numero {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
+    background-color: #005A8D;
+    color: white;
+    font-family: "roboto";
+    font-size: 48px;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
