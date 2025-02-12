@@ -88,6 +88,7 @@ nav ul li a:hover {
     padding: 10px;
     color: white;
     font-size: 32px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .botao:hover {
@@ -102,6 +103,7 @@ nav ul li a:hover {
     background-size: cover;
     background-position: center;
     border-radius: 20px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.25);
 }
 
 .compromentimento {
@@ -120,9 +122,10 @@ nav ul li a:hover {
 
 .conteudo h2 {
     font-size: 32px;
-    font-weight: normal;
+    font-weight: 600;
     font-family: "montserrat";
     margin-bottom: 1px;
+    width: 562px;
 }
 
 .conteudo h2 + p {
@@ -136,7 +139,8 @@ nav ul li a:hover {
 .conteudo p {
     font-family: "roboto";
     font-size: 20px;
-    font-weight: 200
+    font-weight: 200;
+    width: 600px;
 }
 
 .beneficio h3 {
@@ -186,10 +190,11 @@ nav ul li a:hover {
 }
 
 .hero {
-    background-color: #fff;
+    background-color: #ffffff;
     width: 480px;
     height: 685px;
     border-radius: 10px;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.15);
 }
 
 .hero h3 {
