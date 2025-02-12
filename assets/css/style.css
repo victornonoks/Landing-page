@@ -95,8 +95,8 @@ nav ul li a:hover {
 }
 
 .img-compromentimento{
-    flex-shrink: 0; /* Impede que a imagem diminua muito */
-    width: 740px; /* Tamanho fixo da imagem */
+    flex-shrink: 0;
+    width: 740px; 
     height: 765px;
     background-image: url("../imgs/Imagem-fabrica.jpg");
     background-size: cover;
@@ -108,7 +108,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center; 
-    max-width: 1550px;
+    max-width: 1580px;
     margin: 50px 0 50px 10rem;
     gap: 10rem ; 
 }
@@ -142,13 +142,18 @@ nav ul li a:hover {
 .beneficio h3 {
     font-family: "montserrat";
     font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.beneficio div > h3 + p {
+    margin-top: 5px;
 }
 
 .beneficio {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
 }
 
@@ -167,4 +172,65 @@ nav ul li a:hover {
     justify-content: center;
     border-radius: 50%;
     flex-shrink: 0;
+}
+
+.sustentabilidade {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-container {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+}
+
+.hero {
+    background-color: #fff;
+    width: 480px;
+    height: 685px;
+    border-radius: 10px;
+}
+
+.hero h3 {
+    position: relative;
+    font-family: "roboto", serif;
+    font-size: 24px;
+    left: 1.5rem;
+}
+
+.barra-verde {
+    position: relative;
+    width: 165px;
+    height: 3px;
+    background-color: #A1D76B;
+    left: 1.5rem;
+}
+
+.hero p {
+    position: relative;
+    font-family: "roboto", serif;
+    font-size: 20px;
+    font-weight: 200;
+    width: 430px;
+    left: 1.5rem;
+}
+
+.sustentabilidade h1 {
+    position: relative;
+    font-family: "roboto", serif;
+    font-size: 68px;
+    margin-bottom: 5px;
+    left: 10rem;
+}
+
+.sustentabilidade h2 {
+    position: relative;
+    font-family: "montserrat", serif;
+    font-weight: 500;
+    color: #A1D76B;
+    margin-top: 5px;
+    margin-bottom: 62px;
+    left: 10rem;
+    width: 700px;
 }
