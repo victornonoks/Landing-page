@@ -183,6 +183,26 @@ nav ul li a:hover {
     flex-direction: column;
 }
 
+.sustentabilidade h1 {
+    position: relative;
+    font-family: "roboto", serif;
+    font-size: 68px;
+    margin-bottom: 5px;
+    left: 10rem;
+    width: 1000px;
+}
+
+.sustentabilidade h2 {
+    position: relative;
+    font-family: "montserrat", serif;
+    font-weight: 500;
+    color: #A1D76B;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    left: 10rem;
+    width: 700px;
+}
+
 .hero-container {
     display: flex;
     gap: 64px;
@@ -195,6 +215,14 @@ nav ul li a:hover {
     height: 685px;
     border-radius: 10px;
     box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.15);
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.logo-hero {
+    width: 60px;
+    margin-top: 50px;
+    margin-left: 1.5rem;
 }
 
 .hero h3 {
@@ -202,6 +230,7 @@ nav ul li a:hover {
     font-family: "roboto", serif;
     font-size: 24px;
     left: 1.5rem;
+    margin-bottom: 0px;
 }
 
 .barra-verde {
@@ -209,6 +238,8 @@ nav ul li a:hover {
     width: 165px;
     height: 3px;
     background-color: #A1D76B;
+    margin-top: 12px;
+    margin-bottom: 12px;
     left: 1.5rem;
 }
 
@@ -218,24 +249,49 @@ nav ul li a:hover {
     font-size: 20px;
     font-weight: 200;
     width: 430px;
+    margin-top: 0px;
+    margin-bottom: 80px;
     left: 1.5rem;
 }
 
-.sustentabilidade h1 {
-    position: relative;
-    font-family: "roboto", serif;
-    font-size: 68px;
-    margin-bottom: 5px;
-    left: 10rem;
+.imagem-hero {
+    margin-left: 1.5rem;
+    width: 432px;
+    height: 250px;
+    border-radius: 15px;
 }
 
-.sustentabilidade h2 {
-    position: relative;
-    font-family: "montserrat", serif;
-    font-weight: 500;
-    color: #A1D76B;
-    margin-top: 5px;
-    margin-bottom: 62px;
-    left: 10rem;
-    width: 700px;
+.sobre {
+    background-image: url("../imgs/foto\ sobre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+.conteudo-sobre {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    justify-content: center;
+    height: 1000px;
+}
+
+.conteudo-sobre h1 {
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 64px;
+}
+
+.barra-branca {
+    background-color: white;
+    width: 275px;
+    height: 5px;
+}
+
+.conteudo-sobre p {
+    color: #ffffff;
+    width: 835px;
+    font-family: "roboto", serif;
+    font-weight: 200;
+    font-size: 32px;
 }
