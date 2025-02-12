@@ -1,0 +1,87 @@
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Seção principal */
+#depoimentos {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.destaque {
+    color: #0073e6;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Container dos cards */
+#container-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos cards */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Usuarios */
+.usuarios {
+    width: 80px;  
+    height: 80px; 
+    object-fit: cover; 
+}
+
+
+/* Informações do usuário */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.usuario-detalhe h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cargo {
+    font-size: 14px;
+    color: #777;
+    margin: 2px 0 10px;
+}
+
+/* Comentários */
+.comentario {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estrelas */
+.estrela {
+    height: 20px;
+}
