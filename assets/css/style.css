@@ -58,6 +58,7 @@ nav ul li a:hover {
 
 .tela-principal {
     background-image: url("../imgs/close-up-warehouse-view.jpg");
+    background-size: cover;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -340,3 +341,135 @@ nav ul li a:hover {
         font-family: "montserrat", serif;
     }
 }
+
+/* Mobile (menores que 768px) */
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+    }
+
+    .botao {
+        width: 300px;
+        font-size: 26px;
+    }
+
+    .tela-principal {
+        height: 900px;
+    }
+
+    .texto-principal{
+        padding: 1.5rem;
+    }
+
+    .texto-principal h1 {
+        font-size: 40px;
+    }
+
+    .texto-principal p {
+        font-size: 28px;
+    }
+
+    .compromentimento {
+        flex-direction: column; /* Coloca os elementos em coluna */
+        gap: 2rem; /* Dá um espaço entre a imagem e o texto */
+    }
+
+    .img-compromentimento {
+        width: 350px;
+        height: 220px;
+        margin-right: 10.5rem;
+        justify-content: flex-start;
+    }
+
+    .conteudo {
+        width: 250rem; /* Evita que o texto fique grudado na borda */
+        max-width: 530px; /* Define um limite para não ficar muito largo */
+    }
+
+    .conteudo h2 {
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .conteudo p {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .beneficio {
+        width: 150px;
+    }
+
+    .beneficio h3 {
+        width: 200px;
+    }
+
+    .beneficio p {
+        width: 300px;
+    }
+
+    .sustentabilidade {
+        flex-direction: column;
+    }
+
+    .sustentabilidade h1 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .sustentabilidade h2 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero {
+        width: 300px;
+        height: 550px;
+        margin-bottom: 10px;
+    }
+
+    .logo-hero {
+        width: 40px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+        width: 240px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        width: 240px;
+        margin-bottom: 20px;
+    }
+
+    .imagem-hero {
+        height: auto;
+        width: 200px;
+    }
+
+    .sobre {
+        margin: 0;
+        padding: 0;
+    }
+
+    .conteudo-sobre h1 {
+        font-size: 50px;
+    }
+
+    .barra-branca {
+        width: 250px;
+    }
+
+    .conteudo-sobre p {
+        width: 350px;
+        font-size: 20px;
+    }
+}
+
+
+
