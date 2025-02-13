@@ -85,3 +85,101 @@ h1 {
 .estrela {
     height: 20px;
 }
+
+/*footer*/
+
+#rodape{
+    background-color: #ffffff;
+    padding: 20px 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo{
+    width: 177px;
+}
+
+.paragrafos{
+    display: flex;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    gap: 70px;
+}
+
+.fale-conosco{
+    text-align: center;
+    max-width: 400px;
+}
+
+.fale-conosco h3{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.fale-conosco p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.botao {
+    background-color: #005A8D;
+    border-radius: 50px;
+    border: none;
+    width: 370px;
+    height: 60px;
+    padding: 10px;
+    color: white;
+    font-size: 32px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.botao:hover {
+    background-color: #004e7b;
+}
+
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #004e7b;
+    margin: 20px 0;
+}
+
+.direitos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #777;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.nome-empresa{
+    font-weight: bold;
+}
+
+/*---
