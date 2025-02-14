@@ -1,30 +1,7 @@
-/* Reset básico */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+body, html {
     padding: 0;
-    background-color: #f8f8f8;
-    text-align: center;
-}
-
-/* Seção principal */
-#depoimentos {
-    padding: 40px 20px;
-}
-
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.destaque {
-    color: #0073e6;
-}
-
-.subtitulo {
-    font-size: 14px;
-    color: #555;
-    margin-bottom: 30px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -39,16 +16,10 @@ nav {
     z-index: 2;
 }
 
-/* Usuarios */
-.usuarios {
-    width: 80px;  
-    height: 80px; 
-    object-fit: cover; 
-}
-
-
-/* Informações do usuário */
-.usuario-info {
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 10rem 0 0;
     display: flex;
     justify-content: end; /* Alinha os itens ao centro */
 }
@@ -97,7 +68,7 @@ nav ul li a:hover {
 }
 
 .texto-principal {
-    padding: 8rem 0 12.5rem 10rem;
+    padding: 10rem 0 10rem min(10rem, 5%);
 }
 
 .texto-principal h1 {
@@ -105,6 +76,7 @@ nav ul li a:hover {
     font-size: 6rem;
     font-family: "roboto", serif;
     margin-bottom: 0.625rem;
+    width: 70%;
 }
 
 .texto-principal p {
@@ -113,6 +85,7 @@ nav ul li a:hover {
     font-weight: lighter;
     font-family: "montserrat", serif;
     margin-top: 0.625rem;
+    width: 70%;
 }
 
 .botao {
@@ -147,8 +120,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center; 
     max-width: 1580px;
-    margin: 50px 0 50px 10rem;
-    gap: 10rem ; 
+    margin: 4rem 0 4rem min(1.5rem, );
+    gap: 6rem ; 
 }
 
 .conteudo-compromentimento {
@@ -239,7 +212,7 @@ nav ul li a:hover {
     width: 50%;
     font-size: 4.25rem;
     margin-bottom: 5px;
-    left: 10rem;
+    padding: 0 0 0 min(10rem, 5%);
 }
 
 .sustentabilidade h2 {
@@ -249,19 +222,22 @@ nav ul li a:hover {
     color: #A1D76B;
     margin-top: 5px;
     margin-bottom: 30px;
-    left: 10rem;
+    padding: 0 0 0 min(10rem, 5%);
     width: 50%;
 }
 
 .hero-container {
     display: flex;
-    gap: 64px;
+    flex-wrap: wrap;
+    gap: 6rem;
     justify-content: center;
+    width: 100%;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #ffffff;
     width:30rem;
     height: 42.813rem;
@@ -328,7 +304,7 @@ nav ul li a:hover {
 .conteudo-sobre {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
+    padding: 0 0 0 min(10rem, 5%);
     justify-content: center;
     height: 1000px;
 }
@@ -336,7 +312,7 @@ nav ul li a:hover {
 .conteudo-sobre h1 {
     color: #ffffff;
     font-family: "roboto";
-    font-size: 64px;
+    font-size: 4rem;
     margin-bottom: 0;
 }
 
@@ -352,7 +328,163 @@ nav ul li a:hover {
     width: 90%;
     font-family: "roboto", serif;
     font-weight: 200;
-    font-size: 32px;
+    font-size: 2rem;
+}
+
+#depoimentos {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: "roboto";
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.destaque {
+    color: #005A8D;
+}
+
+.subtitulo {
+    font-family: "roboto";
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    margin-top: 0.5rem;
+}
+
+/* Container dos cards */
+#container-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos cards */
+.card {
+    font-family: "roboto";
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Usuarios */
+.usuarios {
+    width: 80px;  
+    height: 80px; 
+    object-fit: cover; 
+}
+
+
+/* Informações do usuário */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.usuario-detalhe h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cargo {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 2px 0 10px;
+}
+
+/* Comentários */
+.comentario {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+/* Estrelas */
+.estrela {
+    height: 20px;
+}
+
+/*footer*/
+
+#rodape{
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo{
+    width: 177px;
+    height: auto;
+}
+
+.paragrafos{
+    font-family: "roboto";
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+    gap: 70px;
+}
+
+.fale-conosco{
+    font-family: "roboto";
+    text-align: center;
+    max-width: 400px;
+}
+
+.fale-conosco h3{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.fale-conosco p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #004e7b;
+    margin: 20px 0;
+}
+
+.direitos{
+    font-family: "roboto";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 /* Mobile (menores que 768px) */
