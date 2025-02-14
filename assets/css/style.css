@@ -119,14 +119,12 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center; 
-    max-width: 1580px;
-    margin: 4rem 0 4rem min(1.5rem, );
+    max-width: 98rem;
     gap: 6rem ; 
 }
 
 .conteudo-compromentimento {
     flex: 1;
-   
 }
 
 .conteudo-compromentimento h2 {
@@ -487,6 +485,10 @@ h1 {
     flex-wrap: wrap;
 }
 
+/* Tela de notebooks (menores que 1260px*/
+@media (max-width: 1260px){
+
+}
 /* Mobile (menores que 768px) */
 @media (max-width: 450px) {
     .container {
