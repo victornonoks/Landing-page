@@ -1,7 +1,14 @@
-//usar rolagem suave para a parte 'sobre' da empresa
-function sobreEmpresa() {
-  document.getElementById("#").scrollIntoView({ behavior: "smooth" });
-}
+//script para fazer rolagem suave em todos os href
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+  });
+});
 
 //botao para redirecionar whatsapp
 function botaoWpp() {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body, html {
     padding: 0;
     margin: 0;
@@ -69,6 +70,155 @@ nav ul li a:hover {
 }
 
 .texto-principal button {
+=======
+/* Reset básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Seção principal */
+#depoimentos {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.destaque {
+    color: #0073e6;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Container dos cards */
+#container-depoimentos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilização dos cards */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Usuarios */
+.usuarios {
+    width: 80px;  
+    height: 80px; 
+    object-fit: cover; 
+}
+
+
+/* Informações do usuário */
+.usuario-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.usuario-detalhe h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cargo {
+    font-size: 14px;
+    color: #777;
+    margin: 2px 0 10px;
+}
+
+/* Comentários */
+.comentario {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Estrelas */
+.estrela {
+    height: 20px;
+}
+
+/*footer*/
+
+#rodape{
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.logo{
+    width: 177px;
+}
+
+.paragrafos{
+    display: flex;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    gap: 70px;
+}
+
+.fale-conosco{
+    text-align: center;
+    max-width: 400px;
+}
+
+.fale-conosco h3{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.fale-conosco p{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.botao {
+>>>>>>> minha-parte
     background-color: #005A8D;
     border-radius: 50px;
     border: none;
@@ -77,4 +227,37 @@ nav ul li a:hover {
     padding: 10px;
     color: white;
     font-size: 32px;
+<<<<<<< HEAD
 }
+=======
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.botao:hover {
+    background-color: #004e7b;
+}
+
+.linha{
+    width: 100%;
+    height: 2px;
+    background-color: #004e7b;
+    margin: 20px 0;
+}
+
+.direitos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    color: #777;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.nome-empresa{
+    font-weight: bold;
+}
+
+/*---
+>>>>>>> minha-parte
