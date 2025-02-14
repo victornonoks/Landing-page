@@ -121,6 +121,7 @@ nav ul li a:hover {
     justify-content: center; 
     max-width: 98rem;
     gap: 6rem ; 
+    padding: 2rem 0 2rem min(10rem, 5%);
 }
 
 .conteudo-compromentimento {
