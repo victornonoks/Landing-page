@@ -59,45 +59,42 @@ nav ul li a:hover {
 .tela-principal {
     background-image: url("../imgs/close-up-warehouse-view.jpg");
     background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: rgb(113, 113, 113);
     display: flex;
-    align-items: center;
-    height: 100dvh;
+    height: auto;
     width: 100%;
 }
 
 .texto-principal {
-    padding: 0 0 0 10rem;
+    padding: 8rem 0 12.5rem 10rem;
 }
 
 .texto-principal h1 {
     color: white;
-    font-size: 96px;
+    font-size: 6rem;
     font-family: "roboto", serif;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .texto-principal p {
     color: white;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: lighter;
     font-family: "montserrat", serif;
-    margin-top: 10px;
+    margin-top: 0.625rem;
 }
 
 .botao {
     background-color: #005A8D;
     border-radius: 50px;
     border: none;
-    width: 370px;
-    height: 60px;
+    width: 22.5rem;
+    height: 3.75rem;
     padding: 10px;
     color: white;
-    font-size: 32px;
+    font-size:2rem;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
@@ -106,9 +103,9 @@ nav ul li a:hover {
 }
 
 .img-compromentimento{
-    flex-shrink: 0;
-    width: 740px; 
-    height: 765px;
+    flex-shrink: 1;
+    width: 46.25rem; 
+    height: 47.813rem;
     background-image: url("../imgs/Imagem-fabrica.jpg");
     background-size: cover;
     background-position: center;
@@ -125,38 +122,36 @@ nav ul li a:hover {
     gap: 10rem ; 
 }
 
-.conteudo {
+.conteudo-compromentimento {
     flex: 1;
-    width: 1200px;
+   
 }
 
-.conteudo h2 {
-    font-size: 32px;
+.conteudo-compromentimento h2 {
+    font-size: 2rem;
     font-weight: 600;
     font-family: "montserrat";
     margin-bottom: 1px;
-    width: 562px;
+    width: 90%;
 }
 
-.conteudo h2 + p {
-    margin-top: 5px;
-}
-
-.conteudo h2 span {
+.conteudo-compromentimento h2 span {
     color: #005A8D;
 }
 
-.conteudo p {
+.conteudo-compromentimento p {
+    margin-top: 5px;
     font-family: "roboto";
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 200;
-    max-width: 600px;
+    width: 90%;
 }
 
 .beneficio h3 {
     font-family: "montserrat";
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 5px;
+    width: 90%;
 }
 
 .beneficio div > h3 + p {
@@ -169,6 +164,7 @@ nav ul li a:hover {
     gap: 15px;
     margin-top: 5px;
     margin-bottom: 10px;
+    width: 90%;
 }
 
 .numero {
@@ -211,10 +207,10 @@ nav ul li a:hover {
 .sustentabilidade h1 {
     position: relative;
     font-family: "roboto", serif;
-    font-size: 68px;
+    width: 50%;
+    font-size: 4.25rem;
     margin-bottom: 5px;
     left: 10rem;
-    width: 1000px;
 }
 
 .sustentabilidade h2 {
@@ -225,7 +221,7 @@ nav ul li a:hover {
     margin-top: 5px;
     margin-bottom: 30px;
     left: 10rem;
-    width: 700px;
+    width: 50%;
 }
 
 .hero-container {
@@ -235,9 +231,11 @@ nav ul li a:hover {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
     background-color: #ffffff;
-    width: 480px;
-    height: 685px;
+    width:30rem;
+    height: 42.813rem;
     border-radius: 10px;
     box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.15);
     margin-top: 10px;
@@ -245,7 +243,7 @@ nav ul li a:hover {
 }
 
 .logo-hero {
-    width: 60px;
+    width: 3.75rem;
     margin-top: 50px;
     margin-left: 1.5rem;
 }
@@ -253,14 +251,15 @@ nav ul li a:hover {
 .hero h3 {
     position: relative;
     font-family: "roboto", serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     left: 1.5rem;
+    width: 90%;
     margin-bottom: 0px;
 }
 
 .barra-verde {
     position: relative;
-    width: 165px;
+    width: 10rem;
     height: 3px;
     background-color: #A1D76B;
     margin-top: 12px;
@@ -271,18 +270,18 @@ nav ul li a:hover {
 .hero p {
     position: relative;
     font-family: "roboto", serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 200;
-    width: 430px;
+    width: 90%;
     margin-top: 0px;
     margin-bottom: 50px;
     left: 1.5rem;
 }
 
 .imagem-hero {
-    display: flex;
-    margin-left: 1.5rem;
-    max-width: 432px;
+    display: block;
+    margin: auto;
+    max-width: 90%;
     height: auto;
     border-radius: 15px;
 }
@@ -321,25 +320,10 @@ nav ul li a:hover {
 
 .conteudo-sobre p {
     color: #ffffff;
-    width: 835px;
+    width: 90%;
     font-family: "roboto", serif;
     font-weight: 200;
     font-size: 32px;
-}
-
-@media (max-width: 10px) {
-    .texto-principal h1 {
-        color: white;
-        font-size: 68px;
-        font-family: "roboto", serif;
-    }
-    
-    .texto-principal p {
-        color: white;
-        font-size: 32px;
-        font-weight: lighter;
-        font-family: "montserrat", serif;
-    }
 }
 
 /* Mobile (menores que 768px) */
@@ -470,6 +454,3 @@ nav ul li a:hover {
         font-size: 20px;
     }
 }
-
-
-
