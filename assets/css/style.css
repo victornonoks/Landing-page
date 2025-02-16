@@ -271,7 +271,7 @@ nav ul li a:hover {
 .hero p {
     position: relative;
     font-family: "roboto", serif;
-    font-size: clamp(0.75rem, 0.95vw, 1rem);
+    font-size: clamp(0.875rem, 0.95vw, 1rem);
     font-weight: 200;
     width: 80%;
     margin-top: 0px;
@@ -332,7 +332,7 @@ nav ul li a:hover {
 
 h1 {
     font-family: "roboto";
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -378,7 +378,6 @@ h1 {
     object-fit: cover; 
 }
 
-
 /* Informações do usuário */
 .usuario-info {
     display: flex;
@@ -399,7 +398,7 @@ h1 {
 
 /* Comentários */
 .comentario {
-    font-size: 1rem;
+    font-size: 0.875rem;
     font-weight: 300;
     margin-bottom: 10px;
 }
@@ -522,19 +521,18 @@ h1 {
         flex-direction: column;
     }
 
+
     .sustentabilidade h2 {
         font-size: 20px;
-        width: 200px;
-    }
+        width: 90%;
 
-    .hero-container {
-        flex-direction: column;
     }
 
     .hero {
-        width: 300px;
-        height: 550px;
+        width: 90%;
+        height: auto;
         margin-bottom: 10px;
+        padding: 10px;
     }
 
     .logo-hero {
@@ -543,17 +541,21 @@ h1 {
 
     .hero h3 {
         font-size: 20px;
-        width: 240px;
+        width: 90%;
     }
 
     .hero p {
         font-size: 18px;
-        width: 240px;
+        width: 90%;
         margin-bottom: 20px;
     }
 
     .imagem-hero {
         height: auto;
         width: 200px;
+    }
+
+    .conteudo-sobre p{
+        font-size: 18px;
     }
 }
