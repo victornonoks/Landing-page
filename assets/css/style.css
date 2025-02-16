@@ -5,12 +5,12 @@ body, html {
 }
 
 nav {
-    top: 5;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.20); 
     padding: 5px 0px 5px 0px;
     width: 100vw; 
     max-width: 100%; 
+    height: 20%;
     left: 0;
     overflow: hidden; 
     z-index: 2;
@@ -19,9 +19,9 @@ nav {
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0 10rem 0 0;
+    padding: 0 5rem 0 0;
     display: flex;
-    justify-content: end; /* Alinha os itens ao centro */
+    justify-content: end; 
 }
 
 nav ul li {
@@ -49,8 +49,8 @@ nav ul li a:hover {
 }
 
 .logo img {
-    height: 100px;
-    width: 100px;
+    height: auto;
+    width: 8rem;
     position: relative;
     top: -35px;
     left: 10rem;
@@ -68,46 +68,47 @@ nav ul li a:hover {
 }
 
 .texto-principal {
-    padding: 10rem 0 10rem min(10rem, 5%);
+    padding: 8rem 0 10rem min(10rem, 5%);
 }
 
 .texto-principal h1 {
     color: white;
-    font-size: 6rem;
+    font-size: clamp(4.2rem, 5vw, 6rem);
     font-family: "roboto", serif;
     margin-bottom: 0.625rem;
-    width: 70%;
+    width: 80%;
 }
 
 .texto-principal p {
     color: white;
-    font-size: 2rem;
+    font-size: clamp(1.55rem, 1.85vw, 2.25rem);
     font-weight: lighter;
     font-family: "montserrat", serif;
     margin-top: 0.625rem;
-    width: 70%;
+    width: 75%;
 }
 
 .botao {
     background-color: #005A8D;
     border-radius: 50px;
     border: none;
-    width: 22.5rem;
-    height: 3.75rem;
+    width: clamp(15rem, 20.67vw, 22.5rem);
+    height: clamp(2rem, auto, 3.75rem);
     padding: 10px;
     color: white;
-    font-size:2rem;
+    font-size:clamp(1.25rem, 1.5vw, 1.75rem);;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .botao:hover {
     background-color: #004e7b;
+    cursor: pointer;
 }
 
 .img-compromentimento{
     flex-shrink: 1;
-    width: 46.25rem; 
-    height: 47.813rem;
+    width: 50%; 
+    height: clamp(42rem, 44vh, 47.813rem);
     background-image: url("../imgs/Imagem-fabrica.jpg");
     background-size: cover;
     background-position: center;
@@ -119,9 +120,9 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center; 
-    max-width: 98rem;
-    gap: 6rem ; 
-    padding: 2rem 0 2rem min(10rem, 5%);
+    max-width: 90%;
+    gap: 3rem; 
+    padding: 2rem 2rem 2rem min(10rem, 5%);
 }
 
 .conteudo-compromentimento {
@@ -129,7 +130,7 @@ nav ul li a:hover {
 }
 
 .conteudo-compromentimento h2 {
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 2vw, 2rem);
     font-weight: 600;
     font-family: "montserrat";
     margin-bottom: 1px;
@@ -143,14 +144,14 @@ nav ul li a:hover {
 .conteudo-compromentimento p {
     margin-top: 5px;
     font-family: "roboto";
-    font-size: 1.25rem;
+    font-size: clamp(0.85rem, 1.2vw, 1.65rem);
     font-weight: 200;
     width: 90%;
 }
 
 .beneficio h3 {
     font-family: "montserrat";
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 1.55vw, 3rem);
     margin-bottom: 5px;
     width: 90%;
 }
@@ -163,20 +164,16 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-top: 5px;
-    margin-bottom: 10px;
     width: 90%;
 }
 
 .numero {
-    width: 70px;
-    height: 70px;
-    min-width: 70px;
-    min-height: 70px;
+    width: clamp(3rem, 5vw, 4.375rem);
+    height: clamp(3rem, 5vw, 4.375rem);
     background-color: #005A8D;
     color: white;
     font-family: "roboto";
-    font-size: 48px;
+    font-size: clamp(2rem, 2.75vw, 3rem);
     font-weight: lighter;
     display: flex;
     align-items: center;
@@ -201,7 +198,7 @@ nav ul li a:hover {
     background-image: url("../imgs/white-texture.jpg");
     background-size: cover;
     background-position: center;
-    opacity: 0.25; /* Ajuste a opacidade conforme necessário */
+    opacity: 0.25; 
     z-index: -1; 
 }
 
@@ -209,7 +206,7 @@ nav ul li a:hover {
     position: relative;
     font-family: "roboto", serif;
     width: 50%;
-    font-size: 4.25rem;
+    font-size: clamp(2rem, 3.5vw, 4.25rem);
     margin-bottom: 5px;
     padding: 0 0 0 min(10rem, 5%);
 }
@@ -218,6 +215,7 @@ nav ul li a:hover {
     position: relative;
     font-family: "montserrat", serif;
     font-weight: 500;
+    font-size: clamp(1rem, 1.45vw, 1.65rem);
     color: #A1D76B;
     margin-top: 5px;
     margin-bottom: 30px;
@@ -228,42 +226,41 @@ nav ul li a:hover {
 .hero-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 6rem;
-    justify-content: center;
-    width: 100%;
+    gap: min(0rem);
+    justify-content: space-evenly;
+    width: 100%;;
 }
 
 .hero {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color: #ffffff;
-    width:30rem;
-    height: 42.813rem;
+    width: clamp(18rem, 25vw, 29.5rem);
+    height: clamp(28rem, 38vw, 40rem);
     border-radius: 10px;
     box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.15);
-    margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 4rem;
 }
 
 .logo-hero {
-    width: 3.75rem;
-    margin-top: 50px;
+    width: 44px;
+    height: auto;
+    margin-top: 34px;
     margin-left: 1.5rem;
 }
 
 .hero h3 {
     position: relative;
     font-family: "roboto", serif;
-    font-size: 1.5rem;
+    font-size: clamp(0.85rem, 1.25vw, 1.5rem);
     left: 1.5rem;
-    width: 90%;
+    width: 80%;
     margin-bottom: 0px;
 }
 
 .barra-verde {
     position: relative;
-    width: 10rem;
+    width: 8rem;
     height: 3px;
     background-color: #A1D76B;
     margin-top: 12px;
@@ -274,16 +271,15 @@ nav ul li a:hover {
 .hero p {
     position: relative;
     font-family: "roboto", serif;
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 0.95vw, 1rem);
     font-weight: 200;
-    width: 90%;
+    width: 80%;
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     left: 1.5rem;
 }
 
 .imagem-hero {
-    display: block;
     margin: auto;
     max-width: 90%;
     height: auto;
@@ -294,10 +290,9 @@ nav ul li a:hover {
     background-image: url("../imgs/img-fabrica-sobre.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: -10rem;
     background-blend-mode: multiply;
     background-color: rgb(113, 113, 113);
-    height: 1000px;
+    height: auto;
 }
 
 .conteudo-sobre {
@@ -305,19 +300,19 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 0 0 0 min(10rem, 5%);
     justify-content: center;
-    height: 1000px;
+    height: clamp(45rem, 45vw, 55rem);
 }
 
 .conteudo-sobre h1 {
     color: #ffffff;
     font-family: "roboto";
-    font-size: 4rem;
+    font-size: clamp(2.45rem, 3.5vw, 4rem);
     margin-bottom: 0;
 }
 
 .barra-branca {
     background-color: white;
-    width: 275px;
+    width: clamp(12rem, 17vw, 18.5rem);
     height: 5px;
     margin-top: 0;
 }
@@ -327,7 +322,7 @@ nav ul li a:hover {
     width: 90%;
     font-family: "roboto", serif;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 1.65vw ,2rem);
 }
 
 #depoimentos {
@@ -337,7 +332,7 @@ nav ul li a:hover {
 
 h1 {
     font-family: "roboto";
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -348,7 +343,7 @@ h1 {
 
 .subtitulo {
     font-family: "roboto";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 30px;
     margin-top: 0.5rem;
@@ -358,28 +353,28 @@ h1 {
 #container-depoimentos {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: min(1rem);
     flex-wrap: wrap;
 }
 
 /* Estilização dos cards */
-.card {
+.card-avaliacao {
     font-family: "roboto";
     background: white;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: clamp(22rem, 25vw, 29.5rem);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /* Usuarios */
 .usuarios {
-    width: 80px;  
-    height: 80px; 
+    width: 5rem;  
+    height: auto; 
     object-fit: cover; 
 }
 
@@ -392,26 +387,26 @@ h1 {
 }
 
 .usuario-detalhe h3 {
-    font-size: 16px;
+    font-size: 1rem;
     margin: 0;
 }
 
 .cargo {
-    font-size: 14px;
+    font-size: 0.85rem;
     font-weight: 300;
     margin: 2px 0 10px;
 }
 
 /* Comentários */
 .comentario {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 300;
     margin-bottom: 10px;
 }
 
 /* Estrelas */
 .estrela {
-    height: 20px;
+    height: 1.5rem;
 }
 
 /*footer*/
@@ -444,10 +439,11 @@ h1 {
 .paragrafos{
     font-family: "roboto";
     display: flex;
-    font-size: 20px;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
     font-weight: 200;
     text-align: left;
-    gap: 70px;
+    gap: 4.375rem;
 }
 
 .fale-conosco{
@@ -457,13 +453,13 @@ h1 {
 }
 
 .fale-conosco h3{
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .fale-conosco p{
-    font-size: 16px;
-    color: #555;
+    font-size: 1rem;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
@@ -479,26 +475,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     flex-wrap: wrap;
 }
 
-/* Tela de notebooks (menores que 1260px*/
-@media (max-width: 1260px){
-
-}
 /* Mobile (menores que 768px) */
 @media (max-width: 450px) {
     .container {
         width: 100%;
-    }
-
-    .botao {
-        width: 300px;
-        font-size: 26px;
     }
 
     .tela-principal {
@@ -518,51 +505,21 @@ h1 {
     }
 
     .compromentimento {
-        flex-direction: column; /* Coloca os elementos em coluna */
-        gap: 2rem; /* Dá um espaço entre a imagem e o texto */
+        flex-direction: column; 
+        gap: 2rem; 
     }
 
     .img-compromentimento {
         width: 350px;
         height: 220px;
-        margin-right: 10.5rem;
-        justify-content: flex-start;
+        justify-content: center;
     }
-
-    .conteudo {
-        width: 250rem; /* Evita que o texto fique grudado na borda */
-        max-width: 530px; /* Define um limite para não ficar muito largo */
-    }
-
-    .conteudo h2 {
-        font-size: 30px;
-        width: 300px;
-    }
-
-    .conteudo p {
-        font-size: 20px;
-        width: 350px;
-    }
-
     .beneficio {
-        width: 150px;
-    }
-
-    .beneficio h3 {
-        width: 200px;
-    }
-
-    .beneficio p {
-        width: 300px;
+        width: 90%;
     }
 
     .sustentabilidade {
         flex-direction: column;
-    }
-
-    .sustentabilidade h1 {
-        font-size: 20px;
-        width: 200px;
     }
 
     .sustentabilidade h2 {
@@ -598,23 +555,5 @@ h1 {
     .imagem-hero {
         height: auto;
         width: 200px;
-    }
-
-    .sobre {
-        margin: 0;
-        padding: 0;
-    }
-
-    .conteudo-sobre h1 {
-        font-size: 50px;
-    }
-
-    .barra-branca {
-        width: 250px;
-    }
-
-    .conteudo-sobre p {
-        width: 350px;
-        font-size: 20px;
     }
 }
