@@ -62,7 +62,10 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-color: rgb(113, 113, 113);
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     width: 100%;
 }
 
@@ -485,6 +488,13 @@ h1 {
 /* Mobile (menores que 768px) */
 @media (max-width: 768px) {
 
+    .tela-principal {
+        display: flex;
+        flex-direction: column;
+        height: 55rem;
+        justify-content: center;
+    }
+
     .texto-principal h1 {
         font-size: 3rem;
     }
@@ -550,10 +560,6 @@ h1 {
         width: 100%;
     }
 
-    .conteudo-sobre p{
-        font-size: 18px;
-    }
-
     .card-avaliacao {
         width: auto;
     }
@@ -570,6 +576,14 @@ h1 {
 
     .imagem-hero {
         width: 90%;
+    }
+
+    .sobre {
+        padding: 40px 20px;
+    }
+
+    .conteudo-sobre {
+        height: 45rem;
     }
 }
 
