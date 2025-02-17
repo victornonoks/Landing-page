@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>NewBox</title>
-    <link rel="icon" href="../imgs/Logo-Newbox-preto.png"> <!-- icon que aparece no separador -->
+    <link rel="icon" href="assets/imgs/Logo-Newbox-preto.png"> <!-- icon que aparece no separador -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,29 +25,29 @@
         <header>
             <nav class="nav-bar">
                 <div class="logo">
-                    <img src="../imgs/Logo-Newbox-branco.png" alt="logo-newbox">
+                    <img src="assets/imgs/Logo-Newbox-branco.png" alt="logo-newbox">
                 </div>
                 <div class="nav-list">
                     <ul>
-                        <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Compromentimento</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"> Sustentabilidade</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Avaliações</a></li>
+                        <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                        <li class="nav-item"><a href="#compromentimento-section" class="nav-link">Compromentimento</a></li>
+                        <li class="nav-item"><a href="#sustentabilidade-section" class="nav-link"> Sustentabilidade</a></li>
+                        <li class="nav-item"><a href="#sobre-section" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="#depoimentos" class="nav-link">Avaliações</a></li>
                     </ul>
                 </div>
     
                 <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="../imgs/menu_white_36dp.svg" alt=""></button>
+                    <button onclick="menuShow()"><img class="icon" src="assets/imgs/menu_white_36dp.svg" alt=""></button>
                 </div>
             </nav>
             <div class="mobile-menu">
                 <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Compromentimento</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sustentabilidade</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Avaliações</a></li>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#compromentimento-section" class="nav-link">Compromentimento</a></li>
+                    <li class="nav-item"><a href="#sustentabilidade-section" class="nav-link">Sustentabilidade</a></li>
+                    <li class="nav-item"><a href="#sobre-section" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"><a href="#depoimentos" class="nav-link">Avaliações</a></li>
                 </ul>
             </div>
         </header>    
@@ -61,7 +61,7 @@
                         no transporte e compromisso com o meio ambiente. Escolha uma solução confiável para suas
                         entregas!
                     </p>
-                    <button class="botao">Solicitar Orçamento</button>
+                    <button class="botao" onclick="botaoWpp()">Solicitar Orçamento</button>
                 </div>
             </div>
         </section>
@@ -109,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="botao">Solicitar Orçamento</button>
+                    <button class="botao" onclick="botaoWpp()">Solicitar Orçamento</button>
                 </div>
             </div>
         </section>
@@ -120,34 +120,34 @@
                 <h2>Produto reciclável, biodegradável e ecológico, reduzindo impactos ambientais.</h2>
                 <div class="hero-container">
                     <div class="hero">
-                        <img class="logo-hero" src="../imgs/eco-amigavel.png" alt="Eco Amigavel">
+                        <img class="logo-hero" src="assets/imgs/eco-amigavel.png" alt="Eco Amigavel">
                         <h3>Papelão Ecológico</h3>
                         <div class="barra-verde"></div>
                         <p>A natureza agradece quando você escolhe papelão reciclável! Nossos produtos são feitos de fibras
                             renováveis, sem impactos nocivos ao meio ambiente. Com um ciclo sustentável,
                             garantimos menor emissão de CO₂ e zero resíduos tóxicos.
                         </p>
-                        <img class="imagem-hero" src="../imgs/pilha de caixas.jpg" alt="caixas empilhadas para reciclagem">
+                        <img class="imagem-hero" src="assets/imgs/pilha de caixas.jpg" alt="caixas empilhadas para reciclagem">
                     </div>
                     <div class="hero">
-                        <img class="logo-hero" src="../imgs/eco-tag.png" alt="Eco Tag">
+                        <img class="logo-hero" src="assets/imgs/eco-tag.png" alt="Eco Tag">
                         <h3>Decomposição Natural, Sem Poluentes</h3>
                         <div class="barra-verde"></div>
                         <p>Diferente de outros materiais, as nossas caixas de papelão se decompõem rapidamente na
                             natureza sem liberar resíduos tóxicos, tornando-se uma alternativa segura e
                             sustentável para o meio ambiente.
                         </p>
-                        <img class="imagem-hero" src="../imgs/Reciclavel.jpg" alt="">
+                        <img class="imagem-hero" src="assets/imgs/Reciclavel.jpg" alt="">
                     </div>
                     <div class="hero">
-                        <img class="logo-hero" src="../imgs/eco-reciclavel.png" alt="Eco reciclagem">
+                        <img class="logo-hero" src="assets/imgs/eco-reciclavel.png" alt="Eco reciclagem">
                         <h3>Economia Circular e Reutilização</h3>
                         <div class="barra-verde"></div>
                         <p>O papelão faz parte de um ciclo sustentável que valoriza o ambiente! Nossas embalagens podem ser reutilizadas
                             diversas vezes antes da reciclagem, reduzindo o desperdício e prolongando a vida útil do nosso
                             material.
                         </p>
-                        <img class="imagem-hero" src="../imgs/caixas aglomeradas.jpg" alt="caixas ">
+                        <img class="imagem-hero" src="assets/imgs/caixas aglomeradas.jpg" alt="caixas ">
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                         proporcionando embalagens personalizadas para atender às necessidades específicas de cada cliente.
                         Com um time altamente capacitado e tecnologia de ponta, garantimos produção ágil, entrega pontual e
                         um rigoroso controle de qualidade</p>
-                    <button class="botao">Solicitar Orçamento</button>
+                    <button class="botao" onclick="botaoWpp()">Solicitar Orçamento</button>
                 </div>
             </div>
         </section>
@@ -234,8 +234,8 @@
                 <div class="logo-contato">
                     <img class="logo" src="/assets/imgs/Logo-Newbox-preto.png" alt="">
                     <div class="paragrafos">
-                        <p>Email:<br> <span>emailexemplo@outlook.com</span></p>
-                        <p>Telefone:<br> <span>(99) 999999999</span></p>
+                        <p>Email:<br> <span>vendas@newboxembalagens.com.br</span></p>
+                        <p>Telefone:<br> <span>(11) 94724-4958</span></p>
                     </div>
                 </div>
     
@@ -243,7 +243,7 @@
                     <h3>Fale conosco</h3>
                     <p>Entre em contato para orçamentos e dúvidas.<br>
                     Estamos prontos para atender você com qualidade e eficiência!</p>
-                    <button class="botao">
+                    <button class="botao" onclick="botaoWpp()">
                         Solicitar Orçamento
                     </button>
                 </div>
@@ -257,7 +257,7 @@
             </div>
     
         </footer>
-        <script src="../js/index.js"></script>
+        <script src="/assets/js/index.js"></script>
 </body>
 
 </html>
