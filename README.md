@@ -23,4 +23,4 @@ Veja o projeto ao vivo [Aqui!](https://victornonoks.github.io/Landing-page/)
 
 ---
 
-Projeto desenvolvido por [Seu Nome](https://github.com/victornonoks) e [Nome do Seu Colega](https://github.com/FWashington1999).
+Projeto desenvolvido por [Victor Martines](https://github.com/victornonoks) e [Fernando Washington](https://github.com/FWashington1999).
