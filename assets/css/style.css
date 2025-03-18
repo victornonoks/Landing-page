@@ -64,8 +64,11 @@ header {
 @media screen and (max-width: 1024px) {
     .nav-bar {
         padding: 1rem 2rem;
+        width: auto;
+        justify-content: space-between;
     }
     .nav-item {
+        padding: 0;
         display: none;
     }
     .login-button {
@@ -618,10 +621,11 @@ h1 {
 
     .sobre {
         padding: 40px 20px;
+        height: auto;
     }
 
     .conteudo-sobre {
-        height: 45rem;
+        height: auto;
     }
 }
 
