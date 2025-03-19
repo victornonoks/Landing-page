@@ -2,6 +2,7 @@ body, html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header {
@@ -63,9 +64,8 @@ header {
 
 @media screen and (max-width: 1024px) {
     .nav-bar {
-        padding: 1rem 2rem;
+        padding: 1rem;
         width: auto;
-        justify-content: space-between;
     }
     .nav-item {
         padding: 0;
@@ -94,6 +94,10 @@ header {
     }
     .open {
         display: block;
+    }
+
+    .logo img {
+        width: 6rem;
     }
 }
 
